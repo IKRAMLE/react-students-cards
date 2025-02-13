@@ -1,0 +1,99 @@
+.students-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #eae5e5;
+  min-height: 100vh;
+}
+
+.students-container h1 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.students-cards {
+  display: flex;
+  justify-content: center;
+  margin: 0 -40px;
+}
+
+/* Student card styling */
+.student-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  padding-bottom: 15px;
+  border: 2px solid rgb(74, 74, 95);
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Student image */
+.student-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Student info styling */
+.student-info {
+  padding: 15px;
+}
+
+.student-info h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.student-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.student-info strong {
+  color: #222;
+  padding-right: 6px;
+}
+
+/* GitHub link styling */
+.student-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.student-info a:hover {
+  color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .students-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .students-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .students-container {
+    padding: 20px;
+  }
+
+  .students-container h1 {
+    font-size: 1.5rem;
+  }
+}
